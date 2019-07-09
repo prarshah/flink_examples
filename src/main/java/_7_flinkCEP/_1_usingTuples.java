@@ -1,7 +1,5 @@
 package _7_flinkCEP;
-
 import _7_flinkCEP._72_practice.Alert;
-
 import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.cep.CEP;
@@ -11,6 +9,9 @@ import org.apache.flink.cep.pattern.conditions.IterativeCondition;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
+
+// overwrite hashcode and isequals for TuplesX by extending it 
+
 
 public class _1_usingTuples {
     public static void main(String args[]) throws Exception{
